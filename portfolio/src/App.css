@@ -29,11 +29,10 @@
   font-size: var(--H1);
   color: var(--highlight-text);
 }
-body {
+.container {
+  display: flex;
   background-color: var(--background-main);
+  height: 1000vh;
+  min-width: 375px;
 }
-.sec{
-  background-color: var(--background-section);
-   color: var(--highlight-text);
-   height: 10rem;
-}
+
