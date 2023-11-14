@@ -29,10 +29,9 @@
   font-size: var(--H1);
   color: var(--highlight-text);
 }
-.container {
+body {
   display: flex;
   background-color: var(--background-main);
   height: 1000vh;
-  min-width: 375px;
 }
 

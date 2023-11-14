@@ -11,6 +11,8 @@
   position: fixed;
   right: 0;
   left: 0;
+  background-color: var(--background-main);
+  z-index: 1000;
 }
 a {
   text-decoration: none;
@@ -42,15 +44,15 @@ button {
 
 /* Responsive */
 @media (max-width: 850px) {
-    .logo a{
-        font-size: var(--H2);
-        margin-left: 1.5rem;
-    }
+  .logo a {
+    font-size: var(--H2);
+    margin-left: 1.5rem;
+  }
   .nav-links {
     display: none;
   }
 
-  .nav-link-mobile{
+  .nav-link-mobile {
     display: block;
     background-color: var(--background-section);
     position: fixed;
@@ -62,9 +64,12 @@ button {
     height: 15rem;
     overflow: hidden;
   }
- 
+
   .nav-link-mobile li {
     padding-bottom: 1rem;
+  }
+  .nav-link-mobile:hover {
+    background-color: var(--background-main);
   }
   button {
     display: flex;
