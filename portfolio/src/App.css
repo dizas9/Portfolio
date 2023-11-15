@@ -22,7 +22,10 @@
   --highlight-text: #ffea00;
 }
 * {
+  color: var(----main-text);
   font-family: var(--font-familly);
+  margin: 0;
+  padding: 0;
 }
 .demo {
   font-weight: var(--style-thin);
@@ -31,7 +34,20 @@
 }
 body {
   display: flex;
+  flex-flow: column wrap;
   background-color: var(--background-main);
   height: 1000vh;
+  /* position: relative; */
 }
-
+.section {
+  /* position: absolute; */
+  min-height: 10rem;
+  min-width: 98.5vw;
+  /* background-color: var(--background-section); */
+  /* background: linear-gradient(
+    to right,
+    var(--background-section),
+    var(--background-main)
+  ); */
+  margin-top: 3rem;
+}

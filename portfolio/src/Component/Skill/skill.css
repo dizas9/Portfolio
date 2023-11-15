@@ -1,0 +1,64 @@
+#skillSection {
+  background: linear-gradient(
+    to left,
+    var(--background-section),
+    var(--background-main)
+  );
+  display: flex;
+  flex-flow: column wrap;
+  order: 2;
+  gap: 1rem;
+}
+#skillSection .section-title {
+  font-size: var(--H2);
+  color: var(--highlight-text);
+  font-weight: var(--style-bold);
+  padding-left: 3rem;
+}
+#text {
+  font-size: var(--H3);
+  color: var(--main-text);
+  font-weight: var(--style-regular);
+  padding-left: 3rem;
+}
+.skill {
+  display: flex;
+  flex-flow: row wrap;
+  height: fit-content;
+  margin-left: 3rem;
+  gap: 0.5rem;
+}
+.skill-item {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem;
+  font-size: var(--H4);
+  font-weight: var(--style-semibold);
+  gap: 0.2rem;
+  border: none;
+  border-radius: 0.2rem;
+}
+.skill-item img {
+  width: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+  #skillSection .section-title {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: var(--H3);
+    padding: 0;
+  }
+  #text {
+  font-size: var(--H4);
+  padding-left: 1.5rem;
+}
+.skill{
+  justify-content: center;
+  margin: 0;
+  gap: 0.2rem;
+}
+}

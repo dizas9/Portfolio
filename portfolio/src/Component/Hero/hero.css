@@ -1,20 +1,16 @@
-* {
-  color: var(----main-text);
-  font-family: var(--font-familly);
-  margin: 0;
-  padding: 0;
-}
-.hero-section {
+#heroSection {
   display: flex;
   flex-flow: row-reverse wrap;
-  position: relative;
-  top: 7rem;
-  background-color: var(--background-section);
-  min-height: 20rem;
-  min-width: 98.5vw;
+  margin-top: 7rem;
   justify-content: center;
   align-items: center;
+    background: linear-gradient(
+    to right,
+    var(--background-section),
+    var(--background-main)
+  );
   gap: 2rem;
+  order: 1;
 }
 
 .image img {
@@ -53,7 +49,7 @@
     height: 10rem;
     border-radius: 9rem;
   }
-  .welcome-note .fullname{
+  .welcome-note .fullname {
     padding: 0.1rem;
     font-size: var(--H3);
   }

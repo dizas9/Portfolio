@@ -2,7 +2,7 @@ import "./hero.css";
 function Hero() {
   return (
     <>
-      <section className="hero-section">
+      <section className="section" id="heroSection">
         <div className="image">
           <img
             src={process.env.PUBLIC_URL + "/Image&Icon/profile.jpg"}
@@ -15,8 +15,8 @@ function Hero() {
             <span className="position">Front End Developer</span>
           </p>
           <p className="description">
-            I like building beautiful and accessible websites. <br></br> I'm based in
-            Dhaka, Bangladesh.
+            I like building beautiful and accessible websites. <br></br> I'm
+            based in Dhaka, Bangladesh.
           </p>
         </div>
       </section>

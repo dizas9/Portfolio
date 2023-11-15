@@ -1,26 +1,10 @@
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { Navigation } from "../../Units/Navigation";
 import "./header.css";
 function Header() {
   const [mobileMode, setMobileMode] = useState(false);
   const [click, setClick] = useState(false);
-  const Navigation = [
-    {
-      name: "Skill",
-      href: "#skillSection",
-    },
-    {
-      name: "Project",
-      href: "#projectSection",
-    },
-    {
-      name: "about",
-      href: "#aboutSection",
-    },
-    {
-      name: "Contact",
-      href: "#contactSection",
-    },
-  ];
+
   const handleToggle = () => {
     setMobileMode(!mobileMode);
   };
@@ -28,10 +12,19 @@ function Header() {
     setClick(!click);
   };
 
+  //exp
+  const linkClick = () => {
+    if (click === true && mobileMode === true) {
+      setClick(!click);
+      setMobileMode(!mobileMode);
+    }
+  };
+
   function buttonClick() {
     handleClick();
     handleToggle();
   }
+
   return (
     <>
       <div className="nav-container">
@@ -43,7 +36,8 @@ function Header() {
           <ul className={!mobileMode ? "nav-links" : "nav-link-mobile"}>
             {Navigation.map((item) => {
               return (
-                <li key={item.key}>
+                <li key={item.key} onClick={linkClick}>
+                  {/* exp */}
                   <a href={item.href}>{item.name}</a>
                 </li>
               );
