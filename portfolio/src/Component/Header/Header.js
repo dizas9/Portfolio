@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Navigation } from "../../Units/Navigation";
 import "./header.css";
-function Header() {
+
+function Header({ children, checked }) {
   const [mobileMode, setMobileMode] = useState(false);
   const [click, setClick] = useState(false);
 
@@ -27,28 +28,45 @@ function Header() {
 
   return (
     <>
-      <div className="nav-container">
-        <div className="logo">
-          <a>{"< Sazid />"}</a>
+      <div className={!checked ? "nav-container" : "nav-containerLite"}>
+        <div>
+          <a className={!checked ? "logo" : "logolite"}>{"< Sazid />"}</a>
         </div>
-
+        {children}
         <div className="nav-item">
-          <ul className={!mobileMode ? "nav-links" : "nav-link-mobile"}>
+          <ul
+            className={
+              !mobileMode
+                ? "nav-links"
+                : !checked
+                ? "nav-link-mobile"
+                : "nav-link-mobilelite"
+            }
+          >
             {Navigation.map((item) => {
               return (
                 <li key={item.key} onClick={linkClick}>
                   {/* exp */}
-                  <a href={item.href}>{item.name}</a>
+                  <a
+                    className={!checked ? "link" : "linklite"}
+                    href={item.href}
+                  >
+                    {item.name}
+                  </a>
                 </li>
               );
             })}
           </ul>
-          <button onClick={buttonClick}>
+          <button onClick={buttonClick} className="barger-menu">
             <img
               src={
-                !click
-                  ? process.env.PUBLIC_URL + "/Image&Icon/toggol.svg"
-                  : process.env.PUBLIC_URL + "/Image&Icon/cross-toggle.svg"
+                !checked
+                  ? !click
+                    ? process.env.PUBLIC_URL + "/Image&Icon/toggle.svg"
+                    : process.env.PUBLIC_URL + "/Image&Icon/cross-toggle.svg"
+                  : click
+                  ? process.env.PUBLIC_URL + "/Image&Icon/cross-togglelite.svg"
+                  : process.env.PUBLIC_URL + "/Image&Icon/togglelite.svg"
               }
               alt="icon"
             />

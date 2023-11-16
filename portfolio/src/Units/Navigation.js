@@ -7,16 +7,17 @@ export const Navigation = [
   },
   {
     key: 2,
-    name: "Project",
-    href: "#projectSection",
-    id: "projectSection",
-  },
-  {
-    key: 3,
     name: "about",
     href: "#aboutSection",
     id: "aboutSection",
   },
+  {
+    key: 3,
+    name: "Project",
+    href: "#projectSection",
+    id: "projectSection",
+  },
+
   {
     key: 4,
     name: "Contact",

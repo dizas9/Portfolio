@@ -17,9 +17,11 @@
   /* Backgraound Color */
   --background-main: rgb(35, 39, 47);
   --background-section: #1c1e21;
+  --background-lite: wheat;
   /* Color -Scheme */
   --main-text: rgb(230, 237, 243);
   --highlight-text: #ffea00;
+  --highlight-text-lite: #097969;
 }
 * {
   color: var(----main-text);
@@ -32,22 +34,40 @@
   font-size: var(--H1);
   color: var(--highlight-text);
 }
-body {
+.container {
   display: flex;
   flex-flow: column wrap;
   background-color: var(--background-main);
   height: 1000vh;
   /* position: relative; */
 }
+.containerLite {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: white;
+  height: 1000vh;
+}
 .section {
-  /* position: absolute; */
   min-height: 10rem;
   min-width: 98.5vw;
-  /* background-color: var(--background-section); */
-  /* background: linear-gradient(
-    to right,
-    var(--background-section),
-    var(--background-main)
-  ); */
   margin-top: 3rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.section-title {
+  font-size: var(--H2);
+  color: var(--highlight-text);
+  font-weight: var(--style-bold);
+  padding-left: 3rem;
+}
+
+/* Master Responsive */
+
+@media (max-width: 850px) {
+  .section-title {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: var(--H3);
+    padding: 0;
+  }
 }

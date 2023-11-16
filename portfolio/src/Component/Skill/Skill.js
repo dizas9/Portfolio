@@ -3,7 +3,7 @@ import "./skill.css";
 function SkillSection({ title, id }) {
   return (
     <section className="section" id={id}>
-      <p className="section-title">"[ ...{title} ]"</p>
+      <p className="section-title">[ ...{title} ]</p>
       <p id="text">Technology I've used so far...</p>
       <div className="skill">
         {SkillButton.map((item) => {
