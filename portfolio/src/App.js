@@ -21,13 +21,16 @@ function App() {
           <Header checked={isChecked}>
             <ToggleButton checked={isChecked} onChange={handleCheckboxChange} />
           </Header>
-          <Hero />
+          <Hero checked={isChecked} />
           <SkillSection
+            checked={isChecked}
             key={Navigation[0]}
             title={Navigation[0].name}
-            id={Navigation[0].id}
+            id1={Navigation[0].idDark}
+            id2={Navigation[0].idLite}
           />
           <AboutSection
+            checked={isChecked}
             key={Navigation[1]}
             title={Navigation[1].name}
             id={Navigation[1].id}

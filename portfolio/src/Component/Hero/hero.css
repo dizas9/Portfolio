@@ -4,10 +4,24 @@
   margin-top: 5rem;
   justify-content: center;
   align-items: center;
-    background: linear-gradient(
+  background: linear-gradient(
     to right,
     var(--background-section),
     var(--background-main)
+  );
+  gap: 2rem;
+  order: 1;
+}
+#heroSectionlite {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  margin-top: 5rem;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to right,
+    var(--background-section-lite),
+    var(--background-lite)
   );
   gap: 2rem;
   order: 1;
@@ -24,16 +38,37 @@
   text-align: center;
   padding: 1rem;
 }
+.welcome-notelite .fullname {
+  color: var(--main-text-lite);
+  font-size: var(--H2);
+  font-weight: var(--style-regular);
+  text-align: center;
+  padding: 1rem;
+}
 .welcome-note .position {
   color: var(--highlight-text);
+  font-weight: var(--style-bold);
+}
+.welcome-notelite .position {
+  color: var(--highlight-text-lite);
   font-weight: var(--style-bold);
 }
 .welcome-note .regular {
   font-weight: var(--style-thin);
 }
+.welcome-notelite .regular {
+  font-weight: var(--style-thin);
+}
 .welcome-note .description {
   font-weight: var(--style-thin);
   color: var(--main-text);
+  font-size: var(--H3);
+  text-align: center;
+  padding: 0.5rem;
+}
+.welcome-notelite .description {
+  font-weight: var(--style-thin);
+  color: var(--main-text-lite);
   font-size: var(--H3);
   text-align: center;
   padding: 0.5rem;
@@ -50,6 +85,10 @@
     border-radius: 9rem;
   }
   .welcome-note .fullname {
+    padding: 0.1rem;
+    font-size: var(--H3);
+  }
+  .welcome-notelite .fullname {
     padding: 0.1rem;
     font-size: var(--H3);
   }

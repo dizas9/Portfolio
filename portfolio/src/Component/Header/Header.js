@@ -46,10 +46,9 @@ function Header({ children, checked }) {
             {Navigation.map((item) => {
               return (
                 <li key={item.key} onClick={linkClick}>
-                  {/* exp */}
                   <a
                     className={!checked ? "link" : "linklite"}
-                    href={item.href}
+                    href={!checked ? item.href : item.href2}
                   >
                     {item.name}
                   </a>

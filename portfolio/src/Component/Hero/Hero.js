@@ -1,15 +1,18 @@
 import "./hero.css";
-function Hero() {
+function Hero({checked}) {
   return (
     <>
-      <section className="section" id="heroSection">
+      <section
+        className="section"
+        id={!checked ? "heroSection" : "heroSectionlite"}
+      >
         <div className="image">
           <img
             src={process.env.PUBLIC_URL + "/Image&Icon/profile.jpg"}
             alt="icon"
           />
         </div>
-        <div className="welcome-note">
+        <div className={!checked ? "welcome-note" : "welcome-notelite"}>
           <p className="fullname">
             <span className="regular">I'm</span> Sazidul Islam ,{" "}
             <span className="position">Front End Developer</span>

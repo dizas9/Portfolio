@@ -16,10 +16,12 @@
 
   /* Backgraound Color */
   --background-main: rgb(35, 39, 47);
-  --background-section: #1c1e21;
-  --background-lite: wheat;
+  --background-section: rgb(28, 30, 33);
+  --background-section-lite: rgb(255, 255, 255);
+  --background-lite: rgb(245, 222, 179);
   /* Color -Scheme */
   --main-text: rgb(230, 237, 243);
+  --main-text-lite: rgb(1, 1, 0);
   --highlight-text: #ffea00;
   --highlight-text-lite: #097969;
 }
@@ -44,13 +46,13 @@
 .containerLite {
   display: flex;
   flex-flow: column wrap;
-  background-color: white;
+  background-color: var(--background-lite);
   height: 1000vh;
 }
 .section {
   min-height: 10rem;
   min-width: 98.5vw;
-  margin-top: 3rem;
+  margin-top: 1rem;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
@@ -60,11 +62,23 @@
   font-weight: var(--style-bold);
   padding-left: 3rem;
 }
+.section-titlelite {
+  font-size: var(--H2);
+  color: var(--highlight-text-lite);
+  font-weight: var(--style-bold);
+  padding-left: 3rem;
+}
 
 /* Master Responsive */
 
 @media (max-width: 850px) {
   .section-title {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: var(--H3);
+    padding: 0;
+  }
+    .section-titlelite {
     display: flex;
     justify-content: space-evenly;
     font-size: var(--H3);

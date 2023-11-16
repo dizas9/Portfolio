@@ -9,9 +9,26 @@
   order: 2;
   gap: 1rem;
 }
+#skillSectionlite {
+  background: linear-gradient(
+    to left,
+    var(--background-section-lite),
+    var(--background-lite)
+  );
+  display: flex;
+  flex-flow: column wrap;
+  order: 2;
+  gap: 1rem;
+}
 #text {
   font-size: var(--H3);
   color: var(--main-text);
+  font-weight: var(--style-regular);
+  padding-left: 3rem;
+}
+#textlite {
+  font-size: var(--H3);
+  color: var(--main-text-lite);
   font-weight: var(--style-regular);
   padding-left: 3rem;
 }
@@ -41,6 +58,10 @@
 /* Responsive */
 @media (max-width: 850px) {
   #text {
+    font-size: var(--H4);
+    padding-left: 1.5rem;
+  }
+   #textlite {
     font-size: var(--H4);
     padding-left: 1.5rem;
   }
