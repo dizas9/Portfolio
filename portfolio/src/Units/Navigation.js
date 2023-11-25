@@ -26,6 +26,8 @@ export const Navigation = [
     key: 4,
     name: "Contact",
     href: "#contactSection",
-    id: "contactSection",
+    href2: "#contactSectionlite",
+    idDark: "contactSection",
+    idLite: "contactSectionlite",
   },
 ];

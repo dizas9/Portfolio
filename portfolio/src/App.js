@@ -7,6 +7,7 @@ import Hero from "./Component/Hero/Hero";
 import SkillSection from "./Component/Skill/Skill";
 import AboutSection from "./Component/About/AboutSection";
 import ToggleButton from "./Units/Toggle Button/button";
+import ContactSection from "./Component/Contact/ContactSection";
 
 function App() {
   const [isChecked, setIsChecked] = useState(false);
@@ -35,6 +36,13 @@ function App() {
             title={Navigation[1].name}
             id1={Navigation[1].idDark}
             id2={Navigation[1].idLite}
+          />
+          <ContactSection
+            checked={isChecked}
+            key={Navigation[3]}
+            title={Navigation[3].name}
+            id1={Navigation[3].idDark}
+            id2={Navigation[3].idLite}
           />
         </div>
       </body>
