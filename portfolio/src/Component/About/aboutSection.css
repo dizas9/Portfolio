@@ -1,0 +1,24 @@
+.about-description  {
+  color: var(--main-text);
+  font-size: 1.2rem;
+  font-weight: var(--style-thin);
+  margin: 2rem;
+  text-align: justify;
+  line-height: 1.8rem;
+}
+.about-descriptionlite {
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+  font-weight: var(--style-thin);
+  margin: 2rem;
+  text-align: justify;
+  line-height: 1.8rem;
+}
+
+/* Responsive */
+@media (max-width: 850px){
+    .about-description,
+    .about-descriptionlite{
+        font-size: var(--H4);
+    }
+}

@@ -13,7 +13,7 @@ export const Navigation = [
     href: "#aboutSection",
     href2: "#aboutSectionlite",
     idDark: "aboutSection",
-    idLike: "aboutSectionlite",
+    idLite: "aboutSectionlite",
   },
   {
     key: 3,

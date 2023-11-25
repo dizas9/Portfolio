@@ -33,7 +33,8 @@ function App() {
             checked={isChecked}
             key={Navigation[1]}
             title={Navigation[1].name}
-            id={Navigation[1].id}
+            id1={Navigation[1].idDark}
+            id2={Navigation[1].idLite}
           />
         </div>
       </body>

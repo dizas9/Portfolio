@@ -25,11 +25,13 @@
   color: var(--main-text);
   font-weight: var(--style-regular);
   padding-left: 3rem;
+  padding-top: 0.5rem;
 }
 #textlite {
   font-size: var(--H3);
   color: var(--main-text-lite);
   font-weight: var(--style-regular);
+  padding-top: 0.5rem;
   padding-left: 3rem;
 }
 .skill {
