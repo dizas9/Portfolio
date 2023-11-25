@@ -1,7 +1,7 @@
 .about-description  {
   color: var(--main-text);
   font-size: 1.2rem;
-  font-weight: var(--style-thin);
+  font-weight: var(--style-light);
   margin: 2rem;
   text-align: justify;
   line-height: 1.8rem;
@@ -9,7 +9,7 @@
 .about-descriptionlite {
   color: rgb(0, 0, 0);
   font-size: 1.2rem;
-  font-weight: var(--style-thin);
+  font-weight: var(--style-light);
   margin: 2rem;
   text-align: justify;
   line-height: 1.8rem;
