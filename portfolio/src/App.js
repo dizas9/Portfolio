@@ -8,6 +8,7 @@ import SkillSection from "./Component/Skill/Skill";
 import AboutSection from "./Component/About/AboutSection";
 import ToggleButton from "./Units/Toggle Button/button";
 import ContactSection from "./Component/Contact/ContactSection";
+import Footer from "./Component/Footer/Footer";
 
 function App() {
   const [isChecked, setIsChecked] = useState(false);
@@ -44,6 +45,7 @@ function App() {
             id1={Navigation[3].idDark}
             id2={Navigation[3].idLite}
           />
+          <Footer checked={isChecked} />
         </div>
       </body>
     </>
